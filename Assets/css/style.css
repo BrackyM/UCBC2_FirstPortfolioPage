@@ -1,0 +1,323 @@
+/* Global Variables */
+
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0; 
+}
+
+img {
+    filter: blur(5px);
+}
+img:hover{
+    filter: blur(0px);
+}
+
+/* Header & Navigation Bar */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: slategrey;
+    padding-left: 20px;
+}
+
+header h1{
+    color: white;
+    background-size: auto;
+    font-size: 40px;
+    padding: 20px 20px 20px 20px;
+}
+
+nav {
+    padding-right: 30px;
+}
+
+nav a {
+    justify-content: space-between;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px;
+}
+
+nav a:hover {
+    background-color: white;
+    color: slategray;
+    margin: 0;
+}
+
+/* Bio Section */
+
+.bio {
+    display: flex;
+    align-items: flex-start;
+    margin: 5em auto 5em auto;
+    width: 46em;
+    z-index: 1;
+    justify-content: space-around;
+}
+
+.bio p {
+    justify-content: center;
+    font-size: 14px;
+}
+
+.bio img {
+    width: 300px;
+    height: auto;
+    filter: blur(0px);
+    border-radius: 50%;
+}
+
+.bio-text {
+    top: -25px;
+    width: 400px;
+    height: 350px;
+    margin-left: 5em;
+}
+
+.bio-text h2 {
+    margin-bottom: 1em;
+}
+
+/* Featured Project */
+
+.feature-project{
+    display: flex;
+    margin: auto;
+    margin-bottom: 40px;
+    height: 500px;
+    width: 1045px;
+    object-fit: contain;
+}
+
+.feature-project h3 {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    background-color: slategrey;
+    opacity: 75%;
+    top: -40px;
+}
+
+.feature-image{
+    height: 500px;
+    width: 908.6px;
+    object-fit: fill;
+}
+
+/* Portfolio work */
+
+.portfolio-work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    max-width: 1045px;
+    height: auto;
+}
+
+.portfolio-work-images {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    object-fit: contain;
+    height: 700px;
+    width: 908.7px;
+    margin:10 10 0 0px;
+}
+
+.portfolio-work-images h3 {
+    position: relative;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    background-color: slategrey;
+    opacity: 75%;
+    top: -40px;
+}
+
+.portfolio-work-images img {
+    width: 454px;
+    height: 350px;
+}
+
+.portfolio-work-images a {
+    text-decoration: none;
+}
+
+.portfolio-work-title {
+    display: flex;
+    width: 136px;
+    height: 400px;
+}
+
+/* Contact Section */
+
+.contact-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 1045px;
+    height: auto;
+    margin: 100px auto;
+}
+
+.contact-list{
+    display: flex;
+    width: 1045px;
+    height: 100px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.contact-list ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-list a {
+    font-size: 20px;
+    margin: 0px 20px;
+    padding: 20px 20px 20px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: slategrey;
+    background-color: white;
+}
+
+.contact-list a:hover {
+    background-color: slategrey;
+    color: white;
+}
+
+/* Media Rules */
+
+@media screen and (max-width: 1075px) {
+
+    .bio {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        align-content: flex-start;
+        gap: 20px;
+        margin-bottom: 20px;
+        width: 600px;
+    }
+
+    .bio img {
+        display: flex;
+        width: 300px;
+        height: auto;
+        filter: blur(0px);
+        border-radius: 50%;
+    }
+
+    .bio-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature-project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 590px;
+        width: 400px;
+    }
+    
+    .feature-image{
+        display: flex;
+        width: 600px;
+    }
+
+    .portfolio-work-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 100px;
+    }
+
+    .portfolio-work {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .portfolio-work-images {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        object-fit: contain;
+        justify-content: center;
+
+    }
+    
+    .portfolio-work-images h3 {
+        position: relative;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        background-color: slategrey;
+        opacity: 75%;
+        top: -40px;
+    }
+    
+    .portfolio-work-images img {
+        width: 554px;
+        height: 450px;
+    }
+    
+    .portfolio-work-images a {
+        text-decoration: none;
+    }
+
+    .contact-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 600px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+    .contact-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 554px;
+        height: auto;
+        margin: 1300px auto;
+    }
+
+    .contact-list a {
+        display: flex;
+        font-size: 20px;
+        width: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: slategrey;
+        background-color: white;
+        justify-content: center;
+    }
+
+    .contact-list ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 600px;
+        padding: 0px;
+    }
+
+    }
