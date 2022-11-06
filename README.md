@@ -37,7 +37,12 @@ THEN I am presented with a responsive layout that adapts to my viewport
 Screenshots follow the order of the code and define sections 
 
 * Screenshot 1: Media Screen
-* ![Media Screen](Assets/images/screenshot%201.JPG)
+
+ ![Media Screen](Assets/images/screenshot%201.JPG)
+
+* Screenshot 2: Final Product
+
+ ![Media Screen](./Assets/images/screenshot3.JPG)
 
 
 
